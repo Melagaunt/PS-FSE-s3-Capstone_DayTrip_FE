@@ -1,48 +1,19 @@
 import "./JournalEntry.css";
 import { useState, useEffect } from "react";
 
-const entries = [
-  {
-    title: "Some title",
-    Description: "blah balh",
-    Author: "Jones, Tiffany",
-    Skill: "Beginner",
-    Date: "1990-01-01",
-  },
-  {
-    title: "Some title",
-    Description: "blah balh",
-    Author: "Jones, Tiffany",
-    Skill: "Beginner",
-    Date: "1990-01-01",
-  },
-  {
-    title: "Some title",
-    Description: "blah balh",
-    Author: "Jones, Tiffany",
-    Skill: "Beginner",
-    Date: "1990-01-01",
-  },
-];
 
-const JournalEntry = () => {
-  const [entries, setEntries] = useState([]);
-  useEffect(() => {
-    setEntries(entries);
-  }, []);
-  return (
-  
-  
-  <article className="JournalEntry">
-    <p>title: =</p>
-    <p>Description: =</p>
-    <p>Author: =</p>
-    <p>Skill: =</p>
-    <p>Date: =</p>
-  
-  
-  </article>
-  );
+
+const JournalEntry = ({prop}) => {
+	const { title, description, author, skill, date } = prop
+	return (
+		<article className="JournalEntry">
+			<p>Title: {title}</p>
+			<p>Description: {description}</p>
+			<p>Author: {author}</p>
+			<p>Skill: {skill}</p>
+			<p>Date: {date}</p>
+		</article>
+	);
 };
 
 export default JournalEntry;

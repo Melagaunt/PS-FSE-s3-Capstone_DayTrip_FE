@@ -1,10 +1,11 @@
 import "./App.css";
-import JournalEntry from "./JournalEntry";
+import JournalEntryList from "./JournalEntryList";
+
 
 function App() {
   return (
     <div className="App">
-      <JournalEntry />
+      <JournalEntryList />
     </div>
   );
 }
