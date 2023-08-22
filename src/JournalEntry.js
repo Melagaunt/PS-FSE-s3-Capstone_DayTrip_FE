@@ -30,7 +30,19 @@ const JournalEntry = () => {
   useEffect(() => {
     setEntries(entries);
   }, []);
-  return <div className="JournalEntry"></div>;
+  return (
+  
+  
+  <article className="JournalEntry">
+    <p>title: =</p>
+    <p>Description: =</p>
+    <p>Author: =</p>
+    <p>Skill: =</p>
+    <p>Date: =</p>
+  
+  
+  </article>
+  );
 };
 
 export default JournalEntry;
