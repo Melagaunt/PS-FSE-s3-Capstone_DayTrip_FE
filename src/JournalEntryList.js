@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
 import JournalEntry from "./JournalEntry";
 
+const ROOT_URL = process.env.ROOT_URL || "http://localhost:5000";
+
 const JournalEntryList = () => {
   const [entries, setEntries] = useState([]);
   useEffect(() => {
-    fetch(entrs).then((vars) => setEntries(entrs));
+    fetch(`${ROOT_URL}/journalentries`)
+      .then((entries) => entries.json())
+      .then((entries) => setEntries(entries));
   }, []);
 
   return (
