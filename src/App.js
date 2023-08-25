@@ -1,5 +1,4 @@
 import "./App.css";
-//import JournalEntryList from "./JournalEntryList";
 import DiaryPage from "./DiaryPage";
 
 function App() {

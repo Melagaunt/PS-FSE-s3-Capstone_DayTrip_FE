@@ -1,9 +1,25 @@
-@import "Reset.css";
+
 
 .App {
-  text-align: left;
+	text-align: left;
+	background-color: #C1EBE7;
+	/* background-color: #999999; */
+	color: #C1EBE7;
+	
+
+	/*
+	primary: #999999 background
+	secondary: #48615D boxes
+	text: #C1EBE7 text
+48615D
+48615D
+c2c2c2
+	*/
 }
 
+h1 {
+	color: #333333
+}
 h2 {
 	font-size: 2rem;
 	font-weight: 700;
@@ -27,3 +43,4 @@ p {
 	font-size: 1rem;
 	font-weight: 400;
 }
+

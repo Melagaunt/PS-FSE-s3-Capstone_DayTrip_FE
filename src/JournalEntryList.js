@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import JournalEntry from "./JournalEntry";
+import "./JournalEntryList.css";
+
 
 const ROOT_URL = process.env.ROOT_URL || "http://localhost:5000";
 
@@ -12,7 +14,7 @@ const JournalEntryList = () => {
   }, []);
 
   return (
-    <section>
+    <section className= 'JournalEntryList'>
       <ul>
         {entries.map((entry) => (
           <li key={entry._id}>
