@@ -19,16 +19,19 @@ const JournalEntry = ({ prop }) => {
   const dateObj = parseDate(date);
   const dateStr = `${dateObj.month} ${dateObj.day}, ${dateObj.year}`;
   return (
-    <article className="JournalEntry" key={_id}>
-      <div>
-        <div>
-          <h2>{title}</h2>
-          <h3>{author}</h3>
-          <h4>{dateStr}</h4>
+    <>
+      <article className="JournalEntry" key={_id}>
+        <div className="force-ellipsis">
+          <div>
+            <h2>{title}</h2>
+            <h3>{author}</h3>
+            <h4>{dateStr}</h4>
+          </div>
+          <p>{description}</p>
         </div>
-        <p>{description}</p>
-      </div>
-    </article>
+      </article>
+      <button>Read More</button>
+    </>
   );
 };
 
