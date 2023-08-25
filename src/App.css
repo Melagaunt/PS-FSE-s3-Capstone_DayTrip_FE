@@ -1,6 +1,29 @@
 @import "Reset.css";
 
 .App {
-  text-align: center;
+  text-align: left;
 }
 
+h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	margin: 5px;
+} 
+
+h3 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin: 3px;
+}
+
+
+h4 {
+	font-size: 1.2rem;
+	font-weight: 500;
+	margin: 3px;
+}
+
+p {
+	font-size: 1rem;
+	font-weight: 400;
+}
