@@ -27,10 +27,12 @@ const JournalEntry = ({ prop }) => {
             <h3>{author}</h3>
             <h4>{dateStr}</h4>
           </div>
-          <p>{description}</p>
+          <div className="entry-container">
+            <button className="view-more-button">Read More</button>
+            <p>{description}</p>
+          </div>
         </div>
       </article>
-      <button>Read More</button>
     </>
   );
 };
