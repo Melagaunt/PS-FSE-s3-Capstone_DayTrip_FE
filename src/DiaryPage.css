@@ -1,3 +1,6 @@
-.diary-container {
-	margin: 0 12.5%
+.DiaryPage {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
