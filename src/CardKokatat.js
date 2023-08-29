@@ -1,28 +1,43 @@
 import "./CardKokatat.css";
 
+const parseDate = (dateTime) => {
+  const dateObj = { date: "", day: "", month: "", year: "", weekday: "" };
+  const parsedDate = new Date(
+    Date.parse(dateTime.split("T")[0].replaceAll("-", "/"))
+  );
 
-const CardKokatat = () => {
+  dateObj.date = parsedDate;
+  dateObj.year = parsedDate.getFullYear();
+  dateObj.month = parsedDate.toLocaleString("default", { month: "long" });
+  dateObj.weekday = parsedDate.toLocaleString("default", { weekday: "long" });
+  dateObj.day = parsedDate.getDate();
+  return dateObj;
+};
 
-    return (
-
-    <div id="OurId" class="blog-card articlePost">
-   <img class="" alt="Thumb goba expedition-2" src="//images.ctfassets.net/pe7xw34fs2z8/1rqVdOnQBKxeUrHjiCP38l/2df463f08a8ba1378e4cfdc000e6de34/Thumb__goba_expedition-2.jpg"></img>
-        
-        <div class="blog-content">
-            <header class="blog-header">
-                <div class="blog-subhead">
-                    <div class="tag">Whitewater</div>
-                    <div class="subhead-divider">|</div>
-                    <div class="blog-date">1.11.22</div>
-                </div>
-                <h2 class="blog-title">Goba Expedition</h2>
-            </header>
-            <div class="blog-post">
-                <span class="teaser">The Goba Expedition - a 1300 km canoe journey from the Yukon Border to the town of Kugluktuk in the Arctic Ocean.</span>
-            </div>
-        </div>
-    </div>
-)}
+const CardKokatat = ({prop}) => {
+	const { _id, title, description, author, skill, date, image } = prop;
+	const dateObj = parseDate(date);
+	const dateStr = `${dateObj.month} ${dateObj.day}, ${dateObj.year}`;
+	
+	return (
+		<div id={_id} class="blog-card articlePost">
+		<img class="" alt={image.alt} src={image.uri}></img>			
+			<div class="blog-content">
+				<header class="blog-header">
+					<div class="blog-subhead">
+						<div class="tag">{author}</div>
+						<div class="subhead-divider">|</div>
+						<div class="blog-date">{dateStr}</div>
+					</div>
+					<h2 class="blog-title">{title}</h2>
+				</header>
+				<div class="blog-post">
+					<span class="teaser">{description}</span>
+				</div>
+			</div>
+		</div>
+	)
+}
 
 export default CardKokatat;
 

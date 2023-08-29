@@ -20,7 +20,7 @@ const JournalEntryList = () => {
         {entries.map((entry) => (
           <li key={entry._id}>
             {/* { <JournalEntry prop={entry} /> } */}
-						<CardKokatat />
+						<CardKokatat prop={entry} />
           </li>
         ))}
       </ul>
