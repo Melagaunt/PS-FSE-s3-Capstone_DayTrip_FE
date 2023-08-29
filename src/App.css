@@ -12,18 +12,18 @@
 	primary: #999999 background
 	secondary: #48615D boxes
 	text: #C1EBE7 text
-48615D
-48615D
-c2c2c2
+	48615D
+	c2c2c2
 	*/
 }
-body {
+
+/* body {
 background-color: #C1EBE7;
 color: #C1EBE7;
-}
+} */
 
 h1 {
-	color: #333333;
+	/* color: #333333; */
 	font-size: 3rem;
 	font-weight: 800;
 	text-align: center;

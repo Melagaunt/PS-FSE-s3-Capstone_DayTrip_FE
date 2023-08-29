@@ -1,0 +1,65 @@
+/* .blog .blog-post-fed .blog-card:hover .overlay {
+	opacity: .5;
+}
+
+.blog .blog-post-fed .blog-card .overlay {
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+}
+
+.blog .blog-post-fee .blog-card {
+	position: relative;
+	z-index: 2;
+	text-align: left;
+	margin-bottom: 15px;
+	-ms-flex-positive: 1;
+	flex: 1 1 100%;
+	background-color: #fff;
+}
+
+body {
+	font-size: 1rem;
+	font-weight: 400;
+	-webkit-font-smoothing: antialised;
+}
+
+body {
+background: #fff;
+margin: 0;
+padding: 0;
+position: relative;
+} */
+
+.blog-subhead {
+	display: flex;
+	width: 100%;
+	gap: 6px;
+	font-size: 16px;
+	/* font-size: 1rem; */
+}
+
+.blog-title	 {
+	text-align: left;
+}
+
+.blog-card {
+	margin: 15px;
+	flex: 1 1 31%;
+}
+
+.blog-content {
+	padding: 45px;
+}
+
+.blog-card .articlePost {
+	max-width: 150px;
+	/* width: 100px; */
+}
+/* .blog-card articlePost {
+	border: red
+} */
