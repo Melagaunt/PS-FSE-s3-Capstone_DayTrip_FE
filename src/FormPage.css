@@ -45,3 +45,15 @@ textarea {
 	cursor: pointer;
 	
 }
+.close-button {
+	position: absolute;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	/* background-color: transparent; */
+	width: 25px;
+	height: 20px;
+	right: 5%;
+
+}

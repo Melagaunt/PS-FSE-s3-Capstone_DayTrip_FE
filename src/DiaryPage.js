@@ -1,18 +1,26 @@
 import "./DiaryPage.css";
 import FormPage from "./FormPage";
 import JournalEntryList from "./JournalEntryList";
+import { useState } from "react";
 
 const DiaryPage = () => {
-	return (
-		<div className="DiaryPage" >
-		<div className="screen" > &nbsp; </div>
-			<h1> Diary Page </h1>
-			<div className="formModal" >
-				<FormPage />
-			</div>
-			<JournalEntryList />
-		</div>
-	);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const changeOpen = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className="DiaryPage">
+      {isOpen ? <div className="screen"> &nbsp; </div> : null}
+      <h1> Diary Page </h1>
+      <button onClick={changeOpen}></button>
+      <div className="formModal">
+        {isOpen ? <FormPage visabilityHandler={changeOpen} /> : null}
+      </div>
+      <JournalEntryList />
+    </div>
+  );
 };
 
 export default DiaryPage;
