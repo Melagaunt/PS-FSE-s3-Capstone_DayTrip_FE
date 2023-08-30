@@ -3,10 +3,10 @@
 	flex-direction: column;
 	width: 300px;
 	padding: 10px;
-	background-color: gray;
+	background-color: #f1f1f3; 
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	border-radius: 16px;
 	
-
-	Border: 5px solid red;
 }
 
 label {
@@ -37,7 +37,7 @@ textarea {
 	font-weight: 600;
 	font-size: 16px;
 
-	background-color: #32cc47;
+	background-color: #b5d99c;
 
 	padding: 15px 32px;
 	margin-top: 8px;
@@ -57,3 +57,4 @@ textarea {
 	right: 5%;
 
 }
+

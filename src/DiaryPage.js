@@ -13,12 +13,14 @@ const DiaryPage = () => {
   return (
     <div className="DiaryPage">
       {isOpen ? <div className="screen"> &nbsp; </div> : null}
-      <h1> Diary Page </h1>
-      <button onClick={changeOpen}></button>
       <div className="formModal">
         {isOpen ? <FormPage visabilityHandler={changeOpen} /> : null}
       </div>
+      <div className="content-container">
+      <h1> Diary Page </h1>
+      <button className="open-form-button" onClick={changeOpen}>+ Add New Post</button>
       <JournalEntryList />
+    </div>
     </div>
   );
 };

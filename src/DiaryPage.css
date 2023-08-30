@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     /* position: relative; */
+    /* max-width: 1300px; */
 }
 
 .formModal {
@@ -22,3 +23,31 @@
     left: 0;
     background-color: hsla(0, 0%, 0%, 0.5);
 }
+
+.open-form-button {
+    border: none;
+	border-radius: 12px;
+    align-self: flex-end; 
+    /* align-self: self-end; */
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 16px;
+
+	background-color: #b5d99c;
+
+	padding: 15px 32px;
+	/* margin-top: 8px; */
+    /* margin-bottom: 8px; */
+    margin: 8px 0;
+	cursor: pointer;
+
+}
+.content-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+max-width: 1200px;
+
+
+}
+
