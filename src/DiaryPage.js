@@ -2,6 +2,7 @@ import "./DiaryPage.css";
 import FormPage from "./FormPage";
 import JournalEntryList from "./JournalEntryList";
 import { useState } from "react";
+const ROOT_URL = process.env.ROOT_URL || "http://localhost:5000";
 
 const DiaryPage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,6 +41,23 @@ const DiaryPage = () => {
         "alt-text": "user uploaded photo",
       },
     };
+
+    fetch(`${ROOT_URL}/journalentries`, {
+      method: "POST", 
+      body: JSON.stringify(data),
+      headers: {"Content-type":"application/json"}
+    })
+     
+    .then((response) => response.json())
+    .then((json) => console.log(json))
+    .then(() =>  changeOpen()                      )
+
+
+
+    
+    
+    
+    
     // TODO - move posts fetch to journal entry list to this page
     // TODO pass journal entries to journal entry list via a prop
     // TODO submit form data
