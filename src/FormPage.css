@@ -6,12 +6,15 @@
 	background-color: #f1f1f3; 
 	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 	border-radius: 16px;
-	
+	/* font: inherit; */
 }
 
 label {
-	margin: 6px 0 ;
-	font-weight: 600;
+	/* margin: 6px 0 ; */
+	margin-bottom: 2px;
+	margin-left: 8px;
+	font-weight: 400;
+	font-size: .75em;;
 }
 
 .full-name {
@@ -21,12 +24,15 @@ label {
 	align-items: center;
 }
 
-.full-name input {
-	width: 100%;
+/* .full-name input {
+	width: 95%;
 	height: 20px;
-}
+	width: .45vw;
+} */
+
 textarea {
 	font-family: inherit;
+	min-height: 6rem;
 }
 
 .submit-button {
@@ -36,7 +42,7 @@ textarea {
 	text-decoration: none;
 	font-weight: 600;
 	font-size: 16px;
-
+	
 	background-color: #b5d99c;
 
 	padding: 15px 32px;
@@ -58,3 +64,19 @@ textarea {
 
 }
 
+.form-group {
+	display: flex;
+	flex-direction: column;
+	margin: 5px 0 ;
+}
+
+input, select, textarea {
+	padding: 0.5rem 0.5rem;
+	font-family: inherit;
+	border-radius: 10px;
+	border: 1px #ccc solid;
+	/* border-bottom: 1px black solid;
+	border-right: 1px black solid; */
+	width: 100%;
+	box-sizing: border-box;
+}
