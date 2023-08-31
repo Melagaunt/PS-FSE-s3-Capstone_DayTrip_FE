@@ -8,9 +8,7 @@
 	border-radius: 16px;
 	/* font: inherit; */
 }
-.close-button {
-	background-color: transparent;
-}
+
 label {
 	/* margin: 6px 0 ; */
 	margin-bottom: 2px;
@@ -59,10 +57,11 @@ textarea {
 	align-items: center;
 	justify-content: center;
 	border: none;
-	/* background-color: transparent; */
+	background-color: transparent;
 	width: 25px;
 	height: 20px;
-	right: 5%;
+	right: 3%;
+	top: 1%;
 
 }
 
