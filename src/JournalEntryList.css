@@ -11,6 +11,8 @@
 .JournalEntryList ul li{
 	flex: 1 1 45%;
 	background-color: white ;
+	border-radius: 16px;
+	overflow: hidden;
 }
 
 /* .JournalEntryList ul li:last-child{

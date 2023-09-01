@@ -57,11 +57,6 @@ const DiaryPage = () => {
       .then((json) => setEntries([json, ...entries]))
       .then(() => changeOpen())
       .then(() => setFormData(blankForm));
-
-    // TODO - move posts fetch to journal entry list to this page
-    // TODO pass journal entries to journal entry list via a prop
-    // TODO submit form data
-    // TODO append respons of submit to the top of journal entries
   };
 
   return (
@@ -78,7 +73,7 @@ const DiaryPage = () => {
         ) : null}
       </div>
       <div className="content-container">
-        <h1> Diary Page </h1>
+        <h1>Log Book</h1>
         <button className="open-form-button" onClick={changeOpen}>
           + Add New Post
         </button>
