@@ -2,6 +2,7 @@ import "./DiaryPage.css";
 import FormPage from "./FormPage";
 import JournalEntryList from "./JournalEntryList";
 import { useState, useEffect } from "react";
+
 const ROOT_URL = process.env.ROOT_URL || "http://localhost:5000";
 
 const DiaryPage = () => {
